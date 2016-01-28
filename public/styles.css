@@ -16,7 +16,8 @@ body{
   background-color: rgba(18,18,18,.9);
   border-bottom: 1px solid rgba(230,230,230,0.8);
   width: 100%;
-  z-index: 9000;
+  z-index: 5000;
+  bottom: -5px;
 }
 
 ul {
@@ -55,6 +56,19 @@ img#logo{
   font-size: 20px;
 }
 
+#linkedin{
+  position: relative;
+  height: 35px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+#github, #gmail{
+  position: relative;
+  height: 35px;
+  margin-top: -5px;
+}
+
 #home{
   padding-right: 40px;
   padding-left: 30px;
@@ -63,7 +77,7 @@ img#logo{
 /* SECTION ONE */
 .section-one{
   /*background-color: rgb(99, 199, 255);*/
-  background-image: url("http://wallpaperlayer.com/img/2015/9/pixel-forest-wallpaper-8218-8535-hd-wallpapers.jpg");
+  background-image: url("./images/pixel-forest.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -78,122 +92,43 @@ img#logo{
 
 
 .container{
-  position: fixed;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%, -50%);
-  width: 500px;
+  width: 100%;
   height: 100%;
+  padding: 0;
+}
+
+img#sun{
+  position: absolute;
+  top: 3%;
+  width: 25%;
 }
 
 img#pixel-me{
   position: absolute;
-  width: 70px;
-  height: auto;
+  width: auto;
+  height: 35%;
   right: 10%;
-  bottom: 25%;
+  bottom: 48px;
+  z-index: 7000;
 }
 
-img#speech-pixel{
-  position: absolute;
-  width: 600px;
-  height: 200px;
-  z-index: 1;
-}
-
-h1.about-me{
-  position: absolute;
-  width: 500px;
-  font-size: 63px;
-  padding-left: 10%;
-  padding-top: 80px;
-  z-index: 20000;
-}
-
-img#arrow{
-  position: relative;
-  left: 50%;
-  top: 88%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-}
-/*img#title{
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 500px;
-}*/
-
-
-.section-two{
-  position: relative;
-  background-color: #F5FCF2;
-  height: 650px;
-  width: 100%;
-  text-align: center;
-}
-
-.about{
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  left: 0;
-  display: inline-block;
-  padding-top: 100px;
-}
-
-
-.info{
-  padding-top: 100px;
+img#post1{
   position: absolute;
   display: inline-block;
-  width: 50%;
-  height: 100%;
-  right: 0;
+  left: 10%;
+  width: 25%;
+  bottom: 55px;
+  z-index: 7000;
 }
 
-h5.about-title{
-  font-size: 40px;
+img#post2{
+  position: absolute;
+  display: inline-block;
+  left: 40%;
+  width: 25%;
+  bottom: 55px;
+  z-index: 7000;
 }
 
-/*img#phone{
-  position: absolute;
-  width: 300px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 
-div.phone-screen{
-  position: absolute;
-  background-color: black;
-  width: 258px;
-  height: 414px;
-  left: 50%;
-  top: 48%;
-  transform: translate(-50%, -50%);
-  z-index: 6000;
-}*/
-/*img#self{
-  position: absolute;
-  width: 400px;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-*/
-.section-three{
-  background-color: rgb(84, 195, 236);
-  position: relative;
-  height: 500px;
-  width: 100%;
-}
 
-img#macbook{
-  position: absolute;
-  width: 600px;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
