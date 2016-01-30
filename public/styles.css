@@ -4,8 +4,7 @@ body{
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-family: 'VT323', ;
 }
 
 /* NAVIATION BAR */
@@ -17,7 +16,12 @@ body{
   border-bottom: 1px solid rgba(230,230,230,0.8);
   width: 100%;
   z-index: 5000;
-  bottom: -5px;
+  top: 0;
+  height: 60px;
+}
+
+#a-link{
+  float: right;
 }
 
 ul {
@@ -26,6 +30,7 @@ ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 li {
@@ -76,10 +81,7 @@ img#logo{
 
 /* SECTION ONE */
 .section-one{
-  /*background-color: rgb(99, 199, 255);*/
-  background-image: url("./images/pixel-forest.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rga(252,252,252);
   position: relative;
   height: 100%;
   width: 100%;
@@ -92,60 +94,35 @@ img#logo{
 
 
 .container{
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  margin-top: 120px;
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  height: 60%;
+  transform: translate(-50%,-50%);
   padding: 0;
-}
-
-.about{
-  position: absolute;
-  width: 60%;
-  left: 20%;
-  top: 5%;
-}
-
-h1{
+  font-family: 'VT323';
   text-align: center;
-  margin: 30px auto;
+  overflow: auto;
 }
 
-p{
-  font-size: 19px;
+img.icon{
+  max-width: 170px;
+  margin: 30px 30px;
 }
 
-img#sun{
+.lower-container{
   position: absolute;
-  top: 5px;
-  width: 25%;
-  left: -2%;
+  top: 80%;
+  left: 50%;
+  width: 100%;
+  height: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-img#pixel-me{
-  position: absolute;
-  width: auto;
-  height: 35%;
-  right: 10%;
-  bottom: 48px;
-  z-index: 7000;
+img#name{
+  max-width: 200px;
+  margin: 50px auto;
 }
-
-img#post1{
-  position: absolute;
-  display: inline-block;
-  left: 10%;
-  width: 25%;
-  bottom: 55px;
-  z-index: 7000;
-}
-
-img#post2{
-  position: absolute;
-  display: inline-block;
-  left: 40%;
-  width: 25%;
-  bottom: 55px;
-  z-index: 7000;
-}
-
-
-
