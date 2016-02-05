@@ -81,7 +81,7 @@ img#logo{
 #lightbulb{
   position: absolute;
   height: 120px;
-  right: 20px;
+  right: 50px;
   top: 60px;
 }
 
@@ -113,6 +113,7 @@ img#logo{
 }
 
 img.icon{
+  position: relative;
   max-width: 170px;
   margin: 30px 30px;
 }
@@ -247,8 +248,10 @@ img#name{
 #project-pic{
   position: relative;
   display:inline-block;
-  width: 400px;
+  width: 320px;
   margin: 10px;
+  max-height: 240px;
+  width: auto;
 }
 
 .contact-section{
