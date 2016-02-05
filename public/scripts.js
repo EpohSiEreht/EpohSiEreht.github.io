@@ -17,6 +17,38 @@
 //   });
 // };
 
+function closeX(){
+  $('body').on('click', '.x-icon', function(){
+    $(this).parent().hide();
+  });
+}
+
+function openAbout(){
+  $('body').on('click', 'img#about', function(){
+    $('.about-section').show();
+  });
+}
+
+function openSkills(){
+  $('body').on('click', 'img#photo', function(){
+    $('.photo-section').show();
+  });
+}
+
+function openPortfolio(){
+  $('body').on('click', 'img#portfolio', function(){
+    $('.portfolio-section').show();
+  });
+}
+
+function openContact(){
+  $('body').on('click', 'img#contact', function(){
+    $('.contact-section').show();
+  });
+}
+
+
+
 /*div.expand-icon{
   width: 100%;
   height: 100%;
@@ -25,6 +57,10 @@
 
 $(function(){
 
-
+  openAbout();
+  openSkills();
+  openPortfolio();
+  openContact();
+  closeX();
 
 });
