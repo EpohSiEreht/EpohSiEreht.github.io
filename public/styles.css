@@ -109,7 +109,6 @@ img#logo{
   padding: 0;
   font-family: 'VT323';
   text-align: center;
-  overflow: auto;
 }
 
 img.icon{
@@ -118,19 +117,20 @@ img.icon{
   margin: 30px 30px;
 }
 
-.lower-container{
+img#name{
   position: absolute;
   top: 80%;
   left: 50%;
-  width: 100%;
-  height: 10%;
   transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-img#name{
   max-width: 200px;
   margin: 50px auto;
+}
+
+.rest{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
 }
 
 .x-icon{
@@ -157,12 +157,10 @@ img#name{
 }
 
 .about-section{
-  display: none;
-  position: absolute;
-  margin-top: 60px;
+  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0;
+  height: 800px;
+  padding: 80px 0;
   background-color: #F73C64;
   text-align: center;
   overflow: auto;
@@ -190,12 +188,10 @@ img#name{
 }
 
 .photo-section{
-  display: none;
-  position: absolute;
-  margin-top: 60px;
+  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0;
+  height: 800px;
+  padding: 80px 0;
   background-color: #FFDD5C;
   text-align: center;
   overflow: auto;
@@ -228,15 +224,16 @@ img#name{
 }
 
 .portfolio-section{
-  display: none;
-  position: absolute;
-  margin-top: 60px;
+  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0;
+  height: auto;
+  padding: 80px 0;
   background-color: #B4FF6B;
   text-align: center;
-  overflow: auto;
+}
+
+h2{
+  margin: 0;
 }
 
 .projects{
@@ -255,12 +252,9 @@ img#name{
 }
 
 .contact-section{
-  display: none;
-  position: absolute;
-  margin-top: 60px;
+  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0;
+  height: 800px;
   background-color: #3BABFF;
   text-align: center;
   overflow: auto;
@@ -281,7 +275,7 @@ img#name{
   width: 500px;
   height: auto;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   box-shadow: 5px 5px #3E3E3F;
