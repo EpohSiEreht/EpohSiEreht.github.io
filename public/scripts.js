@@ -71,16 +71,16 @@ function animateContactIcon(){
 
 $(function(){
 
-  animateAboutIcon();
-  setTimeout(function(){
-    animateSkillsIcon();
-  }, 400);
-  setTimeout(function(){
-    animatePortfolioIcon();
-  }, 800);
-  setTimeout(function(){
-    animateContactIcon();
-  }, 1200);
+  // animateAboutIcon();
+  // setTimeout(function(){
+  //   animateSkillsIcon();
+  // }, 400);
+  // setTimeout(function(){
+  //   animatePortfolioIcon();
+  // }, 800);
+  // setTimeout(function(){
+  //   animateContactIcon();
+  // }, 1200);
 
   openIcons();
 
