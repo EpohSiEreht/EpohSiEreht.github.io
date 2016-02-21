@@ -78,16 +78,9 @@ img#logo{
   padding-left: 30px;
 }
 
-#lightbulb{
-  position: absolute;
-  height: 120px;
-  right: 50px;
-  top: 60px;
-}
-
 /* SECTION ONE */
 .section-one{
-  background-color: rga(252,252,252);
+  background-color: #FDFBFF;
   position: relative;
   height: 100%;
   width: 100%;
@@ -103,27 +96,29 @@ img#logo{
   margin-top: 120px;
   top: 30%;
   left: 50%;
-  width: 80%;
-  height: 60%;
+  width: 100%;
+  height: 70%;
   transform: translate(-50%,-50%);
   padding: 0;
   font-family: 'VT323';
   text-align: center;
+  z-index: 10;
 }
 
 img.icon{
   position: relative;
-  max-width: 170px;
+  height: 152px;
+  width: auto;
   margin: 30px 30px;
 }
 
 img#name{
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 200px;
-  margin: 50px auto;
+  z-index: 5;
 }
 
 .rest{
@@ -161,7 +156,7 @@ img#name{
   width: 100%;
   height: 800px;
   padding: 80px 0;
-  background-color: #F73C64;
+  background-color: #FF4655;
   text-align: center;
   overflow: auto;
   color: white;
@@ -262,20 +257,20 @@ h2{
 
 #mail-message{
   position: absolute;
-  top: 60%;
-  width: 20%;
-  left: 40%;
-  font-size: 30px;
+  top: 33%;
+  width: 50%;
+  left: 25%;
+  font-size: 25px;
   color: white;
   text-shadow: 2px 2px #7B7B7B;
 }
 
 #sendMail{
   position: absolute;
-  width: 500px;
+  width: 250px;
   height: auto;
   left: 50%;
-  top: 50%;
+  top: 30%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   box-shadow: 5px 5px #3E3E3F;
