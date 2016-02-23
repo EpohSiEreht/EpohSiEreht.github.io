@@ -229,7 +229,7 @@ section#projects h2 {
 		overflow-x: hidden;
 	}
 	.page-wrap header {
-		width: auto;
+		width: 60vw;
 		padding: 20px 0;
 	}
 	.header-position {
