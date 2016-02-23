@@ -111,7 +111,6 @@ a:active, a:hover {
 #about {
 	background-image: url(../img/geometry.png);
 	background-position: bottom;
-	background-color: #F61A55;
 }
 
 .flex {
@@ -147,7 +146,6 @@ section#about h2 {
 section#skills {
 	background-image: url(../img/green.png);
 	background-position: bottom;
-	background-color: #F61A55;
 }
 
 .flex-space-around {
@@ -179,7 +177,6 @@ section#projects {
 	padding: 0;
 	background-image: url(../img/food.png);
 	background-position: bottom;
-	background-color: #F61A55;
 }
 
 .col-60 {
@@ -222,7 +219,6 @@ section#projects h2 {
 	cursor: auto;
 	background-image: url(../img/blue.jpg);
 	background-position: bottom;
-	background-color: #F61A55;
 	display: block;
 	width: 100%;
 	line-height: 6;
