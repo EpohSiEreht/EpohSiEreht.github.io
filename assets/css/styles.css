@@ -74,8 +74,8 @@ a:active, a:hover {
 }
 
 .logo {
-	max-width: 140px;
-	height: 140px;
+	max-width: 130px;
+	height: 130px;
 	padding: 0;
 	margin: 0;
 }
@@ -103,7 +103,7 @@ a:active, a:hover {
 }
 
 #about {
-	background-color: #F61A55;
+	background-color: #F2F0F6;
 }
 
 .flex {
@@ -127,9 +127,9 @@ a:active, a:hover {
 section#about h2 {
 	font-weight: 400;
 	font-size: 60px;
-	color: white;
+	color: #252525;
 	margin: 5px 0px 5px 0px;
-	text-shadow: 0px 5px 0px #9F1C23;
+	text-shadow: 0px 5px 0px #F9F3FF;
 }
 
 #tags {
