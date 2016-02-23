@@ -95,7 +95,7 @@ a:active, a:hover {
 
 .main-sections {
 	justify-content: center;
-	width: 100%;
+	width: 100vw;
 }
 
 .main-sections section {
