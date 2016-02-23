@@ -151,7 +151,7 @@ section#skills {
 }
 
 #icons {
-	width: 500px;
+	max-width: 500px;
 	height: auto;
 	 -webkit-filter: drop-shadow(3px 3px 0px #FFFFFF);
 	filter: drop-shadow(3px 3px 0px #FFFFFF);
@@ -264,7 +264,7 @@ section#projects h2 {
 		text-align: center;
 	}
 	#icons{
-		width: 100vw;
+		max-width: 400px;
 	}
 	.page-footer a{
 		width: 100vw;
