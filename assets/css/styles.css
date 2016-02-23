@@ -11,6 +11,7 @@ body {
 	display: flex;
 	min-height: 100vh;
 	width: 100vw;
+	overflow-x: hidden;
 }
 
 .mobile-nav {
@@ -96,6 +97,7 @@ a:active, a:hover {
 
 .main-sections {
 	justify-content: center;
+	overflow-x: hidden;
 }
 
 .main-sections section {
