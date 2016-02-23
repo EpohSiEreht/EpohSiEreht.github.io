@@ -1,8 +1,10 @@
 body {
 	margin: 0;
+	padding: 0;
 	line-height: 1.6;
 	font-family: 'Fira Sans', sans-serif;
 	color: #151617;
+	overflow-x: hidden;
 }
 
 .page-wrap {
@@ -224,6 +226,8 @@ section#projects h2 {
 @media (max-width: 775px) {
 	.page-wrap {
 		display: block;
+		margin: 0;
+		padding: 0;
 	}
 	.page-wrap header {
 		width: auto;
