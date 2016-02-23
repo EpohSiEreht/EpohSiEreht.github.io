@@ -4,7 +4,6 @@ body {
 	line-height: 1.6;
 	font-family: 'Fira Sans', sans-serif;
 	color: #151617;
-	overflow-x: hidden;
 }
 
 .page-wrap {
@@ -96,6 +95,7 @@ a:active, a:hover {
 
 .main-sections {
 	justify-content: center;
+	width: 100%;
 }
 
 .main-sections section {
