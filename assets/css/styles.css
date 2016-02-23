@@ -103,7 +103,7 @@ a:active, a:hover {
 }
 
 #about {
-	background-color: #F2F0F6;
+	background-color: #F61A55;
 }
 
 .flex {
@@ -127,9 +127,9 @@ a:active, a:hover {
 section#about h2 {
 	font-weight: 400;
 	font-size: 60px;
-	color: #252525;
+	color: white;
 	margin: 5px 0px 5px 0px;
-	text-shadow: 0px 5px 0px #F9F3FF;
+	text-shadow: 0px 5px 0px #9F1C23;
 }
 
 #tags {
@@ -196,6 +196,7 @@ section#projects h2 {
 }
 
 .project-tile {
+	cursor: auto;
 	display: inline-flex;
 	width: 200px;
 	height: 200px;
@@ -204,6 +205,7 @@ section#projects h2 {
 }
 
 .project-tile:hover {
+	cursor: auto;
 	-moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
 	transform: scale(1.1);
@@ -211,6 +213,7 @@ section#projects h2 {
 
 .page-footer a{
 	color: white;
+	cursor: auto;
 	background: #469DFA;
 	display: block;
 	width: 100%;
@@ -229,26 +232,28 @@ section#projects h2 {
 		overflow-x: hidden;
 	}
 	.page-wrap header {
-		width: 60vw;
+		width: 100vw;
 		padding: 20px 0;
 	}
 	.header-position {
+		width: 100vw;
 		position: relative;
 		top: auto;
 		bottom: auto;
 		left: auto;
-		align-items: center;
+		align-items: left;
 	}
 	.logo {
 		height: 45px;
+		width: 45px;
+		margin-left: 5%;
 	}
 	.page-nav {
 		display: none;
 	}
 	.nav-icons {
-		left: 100%;
-		width: 100vw;
-		top: -5px;
+		top: -3px;
+		left: 20%;
 	}
 	.main-sections {
 		width: 100vw;
@@ -267,7 +272,7 @@ section#projects h2 {
 		max-width: 60vw;
 	}
 	.page-footer a{
-		width: 60vw;
+		width: 100vw;
 		font-size: 5vw;
 	}
 }
