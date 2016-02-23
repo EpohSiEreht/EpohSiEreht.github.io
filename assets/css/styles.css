@@ -93,7 +93,6 @@ a:active, a:hover {
 }
 
 .main-sections {
-	flex: 1;
 	justify-content: center;
 }
 
@@ -253,5 +252,6 @@ section#projects h2 {
 	}
 	.main-sections {
 		width: 100vw;
+		left: 20%;
 	}
 }
