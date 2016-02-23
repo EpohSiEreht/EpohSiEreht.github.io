@@ -263,6 +263,9 @@ section#projects h2 {
 	section#about p{
 		text-align: center;
 	}
+	#icons{
+		width: 100vw;
+	}
 	.page-footer a{
 		width: 100vw;
 	}
