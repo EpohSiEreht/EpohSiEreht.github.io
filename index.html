@@ -1,108 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>David Lee | Web Developer</title>
-  <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="./public/styles.css">
+	<meta charset="utf-8">
+	<title>David Lee | Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
-<!-- Navigation -->
-<nav class="navigation">
-  <ul id="nav">
-    <li><a href="#main-section"><img src="./public/images/logo.png" id="logo" /></a></li>
-    <li id="separation">|</li>
-    <li id="nav-right"><a class="nav" id="a-link" href="https://www.linkedin.com/in/epohsiereht"><img src="./public/images/linkedin.png" id="linkedin"></a></li>
-    <li id="nav-right"><a class="nav" id="a-link" href="https://github.com/EpohSiEreht"><img src="./public/images/github.png" id="github"></a></li>
-    <li id="nav-right"><a class="nav" id="a-link" href="#contact-id"><img src="./public/images/gmail.png" id="gmail"></a></li>
-  </ul>
-</nav>
 
-<!-- Intro Section One -->
-<section class="section-one" id="main-section">
+<div class="page-wrap">
+	
+	<header>
+		<div class="header-position">
+			<img src="./assets/img/logo.png" class="logo">
+			<nav class="page-nav">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="nav-icons">
+				<a href="#"><img class="nav-link-icon" src="./assets/img/github.png"></a>
+				<a href="#"><img class="nav-link-icon" src="./assets/img/linkedin.png"></a>
+			</div>
+		</div>
+	</header>
 
-  <ul class="container">
-    <a href="#about-id"><img src="./public/images/about-icon.png" id="about" class="icon"/></a>
-    <a href="#photo-id"><img src="./public/images/photo-icon.png" id="photo" class="icon"></a><br>
-    <a href="#portfolio-id"><img src="./public/images/portfolio-icon.png" id="portfolio" class="icon"></a>
-    <a href="#contact-id"><img src="./public/images/contact-icon.png" id="contact" class="icon"><br></a>
-  </ul>
-  <img src="./public/images/name.png" id="name">
-</section>
+	<div class="main-sections">
+		<section id="about">
+			<div class="flex flex-center">
+				<div class="col-1 push-right">
+					<img id="my-pic" src="./assets/img/profile.png">
+					<h2>David Lee</h2>
+					<p>Web Developer | Thinker | Puzzle Solver</p>
+					<p>From perfecting my Xanga page to tinkering with my precious 1997 Digimon tamagotchi, I have always been interested in technology. Realizing that this part of me would never go away, I made the jump into web development. I hope to inspire others and look forward to creating beautiful products for people to use.</p>
+				</div>
+			</div>
+		</section>
+		<section id="skills">
+			<div class="flex flex-space-around">
+				
+				<div class="skill-tree">
+					<h2>Skills</h2>
+					<img src="./assets/img/Icons.png" id="icons">
+				</div>
+				
+			</div>
+		</section>
+		<section id="projects">
+			<div class="flex flex-center">
+				<div class="col-60">
+					<h2>Projects</h2>
+					<div class="project-wrap">
+						<div class="project-tile" style="background-image: url(./assets/img/project1.png)">
+						</div>
+						<div class="project-tile" style="background-image: url(./assets/img/project2.png)">
+						</div>
+						<div class="project-tile" style="background-image: url(./assets/img/project3.png)">
+						</div>
+						<br>
+						<div class="project-tile" style="background-image: url(./assets/img/project4.png)">
+						</div>
+						<div class="project-tile" style="background-image: url(./assets/img/project5.png)">
+						</div>
+						<div class="project-tile" style="background-image: url(./assets/img/project6.png)">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="contact" class="page-footer">
+			<a href="mailto:iamdaviddlee@gmail.com">iamdaviddlee@gmail.com</a>
+			<br>
+			<img src="">
+		</footer>
+		
+	</div>
 
-<section class="rest">
-    <div class="about-section" id="about-id">
-
-      <img src="./public/images/profile.png" id="pic">
-      <h2 id="intro"> Hi! My name is David!</h2>
-      <p id="about-me"> I'm an enthusiastic web developer, passionate about learning new technologies and solving puzzles!</p>
-    </div>
-
-    <div class="photo-section" id="photo-id">
-
-
-      <h2 id="skills"> Skills </h2>
-
-      <table class="language" id="skill-table">
-        <tr>
-          <td id="skill-type">Languages</td>
-        </tr>
-        <tr>
-          <td id="skill-results">JavaScript | Ruby</td>
-        </tr>
-      </table>
-      <table class="front-end" id="skill-table">
-        <tr>
-          <td id="skill-type">Front-end</td>
-        </tr>
-        <tr>
-          <td id="skill-results"> HTML5 | CSS3 | jQuery | AngularJS</td>
-        </tr>
-      </table>
-      <table class="back-end" id="skill-table">
-        <tr>
-          <td id="skill-type">Back-end</td>
-        </tr>
-        <tr>
-          <td id="skill-results"> Node.js(Express) | Ruby on Rails | (No)SQL </td>
-        </tr>
-      </table>
-      <table class="graphic-tools" id="skill-table">
-        <tr>
-          <td id="skill-type">Graphic Tools</td>
-        </tr>
-        <tr>
-          <td id="skill-results"> Pixelmator | Sketch | Adobe Photoshop | Adobe Premiere </td>
-        </tr>
-      </table>
-
-    </div>
-
-    <div class="portfolio-section" id="portfolio-id">
-
-      <h2 class="projects"> Projects </h2>
-      <div class="tiles">
-        <a href="http://www.iamdavidlee.com/FirstGame/"><img src="./public/images/project1.png" id="project-pic"></a>
-        <a href="https://flying-shoes.herokuapp.com/#"><img src="./public/images/project2.png" id="project-pic"></a>
-        <a href="https://owl-nightmares.herokuapp.com/"><img src="./public/images/project3.png" id="project-pic"></a>
-        <a href="http://www.iamdavidlee.com/FirstGame/"><img src="./public/images/project4.png" id="project-pic"></a>
-        <a href="https://github.com/EpohSiEreht/WDI_WODR_OTTER/tree/master/w05/d02/evening_exercise/TodoList"><img src="./public/images/project5.png" id="project-pic"></a>
-      </div>
-    </div>
-
-    <div class="contact-section" id="contact-id">
-      <a href="mailto:ddlee.907@gmail.com"><img id="sendMail" src="./public/images/mail-icon.png"></a>
-      <p id="mail-message">Click to Email</p>
-    </div>
-  </section>
+</div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="./public/scripts.js"></script>
 
+<script type="text/javascript" src="./assets/js/scripts.js"></script>
 </body>
 </html>
