@@ -123,7 +123,6 @@ a:active, a:hover {
 }
 
 #my-pic{
-	position: absolute;
 	margin-left: -300px;
 	top: 100px;
 	width: 250px;
@@ -249,6 +248,6 @@ section#projects h2 {
 		top: -5px;
 	}
 	#my-pic {
-		top: 34%;
+		
 	}
 }
