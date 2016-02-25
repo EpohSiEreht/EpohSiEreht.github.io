@@ -173,7 +173,7 @@ a:active, a:hover {
 	top: 25%;
 	min-height: 80px;
 	width: 80px;
-	left: 2%;
+	left: 0;
 	-moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -187,7 +187,7 @@ a:active, a:hover {
 	top: 25%;
 	min-height: 80px;
 	width: 80px;
-	right: 2%;
+	right: 0;
 }
 
 .content-area {
@@ -327,7 +327,7 @@ h1 {
 	display: none;
 }
 
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
 	.navbar {
 		display: none;
 	}
@@ -337,9 +337,20 @@ h1 {
 	}
 }
 
-@media (max-width: 530px) {
+@media only screen and  (max-width: 530px) {
 	#email-area {
 		padding-top: 30px;
 		font-size: 5vw;
+	}
+
+	div.project-tile {
+		width: 70vw;
+	}
+}
+
+@media only screen and  (max-width: 430px ){
+	
+	div.project-tile {
+		width: 70vw;
 	}
 }

@@ -25,37 +25,37 @@ function contentTransition() {
 }
 
 function rightProjects(){
-	$('#first-content').animate({
+	$('#first-content').velocity({
 		right: '100vw'
 	}, 500);
-	$('#second-content').css('right', '-100vw').show().animate({
+	$('#second-content').css('right', '-100vw').show().velocity({
 		right: '0'
 	}, 500);
 }
 
 function rightContact(){
-	$('#second-content').animate({
+	$('#second-content').velocity({
 		right: '100vw'
 	}, 500);
-	$('#third-content').css('right', '-100vw').show().animate({
+	$('#third-content').css('right', '-100vw').show().velocity({
 		right: '0'
 	}, 500);
 }
 
 function leftAbout(){
-	$('#second-content').animate({
+	$('#second-content').velocity({
 		right: '-100vw'
 	}, 500);
-	$('#first-content').show().animate({
+	$('#first-content').show().velocity({
 		right: '0'
 	}, 500);
 }
 
 function leftProjects(){
-	$('#second-content').animate({
+	$('#second-content').velocity({
 		right: '0vw'
 	}, 500);
-	$('#third-content').animate({
+	$('#third-content').velocity({
 		right: '-100vw'
 	}, 500);
 }
@@ -101,13 +101,13 @@ function projectHover() {
 		var thisHover = $(this).find('.hover-tile');
 		var thisH = $(this).find('h3');
 		$(thisHover).show();
-		$(thisHover).animate({
+		$(thisHover).velocity({
 			height: '100%'
 		}, 700)},
 		function(){
 			var thisHover = $(this).find('.hover-tile');
 			var thisH = $(this).find('h3');
-			$(thisHover).animate({
+			$(thisHover).velocity({
 				height: '0'
 			}, 700);
 			setTimeout(function(){
@@ -122,11 +122,11 @@ function toggleHamburger() {
         $(this).toggleClass('open');
         var dropHeight = $('#menu-drop').get(0).scrollHeight + "px";
         if($('#menu-drop').css('height') === "0px"){
-        	$('#menu-drop').show().animate({
+        	$('#menu-drop').show().velocity({
         		height: $('#menu-drop').get(0).scrollHeight
         	}, 500);
         } else if($('#menu-drop').css('height') === dropHeight){
-        	$('#menu-drop').animate({
+        	$('#menu-drop').velocity({
         		height: '0px'
         	}, 500);
     		setTimeout(function(){
