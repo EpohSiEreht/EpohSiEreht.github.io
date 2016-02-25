@@ -4,53 +4,174 @@
 	<meta charset="utf-8">
 	<title>David Lee | Web Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/scripts.js"></script>
 </head>
 <body>
 
 <div class="page-wrap">
 	<div class="mobile-nav">
+		<img class="logo" src="./assets/img/logo.png">
+		<div id="nav-icon">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+		<div id="menu-drop">
+			<ul>
+				<li><p class="nav-a" id="nav-about" href="">About</p></li>
+				<li><p class="nav-a" id="nav-projects" href="">Projects</p></li>
+				<li><p class="nav-a" id="nav-contact" href="">Contact</p></li>
+				<li><a class="nav-a" href="https://twitter.com/Life0fDavid">Twitter</a></li>
+				<li><a class="nav-a" href="https://github.com/EpohSiEreht">Github</a></li>
+				<li><a class="nav-a" href="https://www.linkedin.com/in/epohsiereht">LinkedIn</a></li>
+			</ul>
+		</div>
+	</div>
+	<nav class="navbar">
+		<ul>
+			<li><img class="logo" src="./assets/img/logo.png"></li>
+			<li>About</li>
+			<li>Projects</li>
+			<li>Contact</li>
+			<li><a href="https://twitter.com/Life0fDavid"><img class="nav-icon" src="./assets/img/twitter.png"></a></li>
+			<li><a href="https://github.com/EpohSiEreht"><img class="nav-icon" src="./assets/img/github.png"></a></li>
+			<li><a href="https://www.linkedin.com/in/epohsiereht
+"><img class="nav-icon" src="./assets/img/linkedin.png"></a></li>
+		</ul>
+	</nav>
+
+	<div class="content-area" id="first-content">
+
+		<section class="sections" id="about">
+			<h1>About me</h1>
+			<p>I am an ambitious web developer, passionate about new technology and its capability. I hope to inspire others and aim to create beautiful products for people to use.</p>
+		</section>
+
+
+		<section class="sections" id="skills">
+			<h1>Skills</h1>
+			<img id="skill-icon" src="./assets/img/Icons.png">
+		</section>
+
+		<img class="right-arrow" id="to-projects" src="./assets/img/arrow.png">
+
+	</div>
+
+	<div class="content-area" id="second-content">
+
+		<section class="sections" id="projects">
+			<h1>Projects</h1>
+				<div class="project-wrap">
+					<div class="project-tile" style="background-image: url(./assets/img/mac.png)">
+						<div class="back-tile" style="background-image: url(./assets/img/project1.png)">
+						</div>
+						<a href="https://github.com/EpohSiEreht/FirstGame">
+						<div class="hover-tile">
+							<h3>Water, Grass, Fire</h3>
+						</div>
+						</a>
+					</div>
+					<div class="project-tile" style="background-image: url(./assets/img/mac.png)">
+						<div class="back-tile" style="background-image: url(./assets/img/project2.png)">
+						</div>
+						<a href="https://github.com/EpohSiEreht/RestaurantApp">
+						<div class="hover-tile">
+							<h3>Shaky Shack</h3>
+						</div>
+						</a>
+					</div>
+					<div class="project-tile" style="background-image: url(./assets/img/mac.png)">
+						<div class="back-tile" style="background-image: url(./assets/img/project3.png)">
+						</div>
+						<a href="https://github.com/EpohSiEreht/Project3">
+						<div class="hover-tile">
+							<h3>Project Hearsay</h3>
+						</div>
+						</a>
+					</div>
+					<div class="project-tile" style="background-image: url(./assets/img/mac.png)">
+						<div class="back-tile" style="background-image: url(./assets/img/project4.png)">
+						</div>
+						<a href="https://github.com/EpohSiEreht/bordio">
+						<div class="hover-tile">
+							<h3>Bordio</h3>
+						</div>
+						</a>
+					</div>
+					<div class="project-tile" style="background-image: url(./assets/img/mac.png)">
+						<div class="back-tile"  style="background-image: url(./assets/img/project5.png)">
+						</div>
+						<a href="https://github.com/EpohSiEreht/Battle-Maps">
+						<div class="hover-tile">
+							<h3>Battle Maps</h3>
+						</div>
+						</a>
+					</div>
+					<div class="project-tile" style="background-image: url(./assets/img/mac.png)">
+						<div class="back-tile" style="background-image: url(./assets/img/project6.png)">
+						</div>
+						<a href="https://github.com/sfrieson/NewNeighborhoods">
+						<div class="hover-tile">
+							<h3>Art District</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+		</section>
+
+		<img class="left-arrow" id="to-about" src="./assets/img/arrow.png">
+		<img class="right-arrow" id="to-contact" src="./assets/img/arrow.png">
+
+	</div>
+
+	<div class="content-area" id="third-content">
+
+		<section class="sections" id="contact">
+			<h1>Contact Me</h1>
+			<img id="profile" src="./assets/img/profile.png">
+			<div id="email-area">
+				<a href="mailto:iamdaviddlee@gmail.com">iamdaviddlee@gmail.com</a>
+			</div>
+		</section>
+
+		<img class="left-arrow" id="back-projects" src="./assets/img/arrow.png">
+
+	</div>
+
+
+	<!-- <div class="mobile-nav">
 		<ul>
 			<li><a href="#about">About</a></li>
 			<li><a href="#skills">Skills</a></li>
 			<li><a href="#projects">Projects</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
-	</div>
-	<header>
-		<div class="header-position">
-			<img src="./assets/img/logo.png" class="logo">
-			<nav class="page-nav">
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="nav-icons">
-				<a href="https://github.com/EpohSiEreht"><img class="nav-link-icon" src="./assets/img/github.png"></a>
-				<a href="https://www.linkedin.com/in/epohsiereht
-        "><img class="nav-link-icon" src="./assets/img/linkedin.png"></a>
-        <div class="mobile-nav-toggle" id="menu-bar"><img src="./assets/img/menu.png" id="menu" class="mobile-nav-toggle"></div>
-			</div>
-		</div>
-	</header>
+	</div> -->
 
-	<div class="main-sections">
+
+
+<!-- 	<div class="main-sections">
 		<section id="about">
 			<div class="flex flex-center">
-					<h2>David Lee<br><span id="tags">• Web Developer <br>• Thinker<br>   • Puzzle Solver</span></h2>
+				<div class="col-1 push-right">
+					<img id="my-pic" src="./assets/img/profile.png">
+					<h2>David Lee</h2>
+					<p>• Web Developer • Thinker<br>   • Problem Solver</p>
+				</div>
 			</div>
 		</section>
 		<section id="skills">
 			<div class="flex flex-space-around">
+				
 				<div class="skill-tree">
 					<h2>Skills</h2>
 					<img src="./assets/img/Icons.png" id="icons">
 				</div>
+				
 			</div>
 		</section>
 		<section id="projects">
@@ -58,19 +179,19 @@
 				<div class="col-60">
 					<h2>Projects</h2>
 					<div class="project-wrap">
-						<a href="https://github.com/EpohSiEreht/FirstGame" class="project-tile" style="background-image: url(./assets/img/project1.png)">
-						</a>
-						<a href="https://github.com/EpohSiEreht/RestaurantApp" class="project-tile" style="background-image: url(./assets/img/project2.png)">
-						</a>
-						<a href="https://github.com/EpohSiEreht/Project3" class="project-tile" style="background-image: url(./assets/img/project3.png)">
-						</a>
+						<div class="project-tile" style="background-image: url(./assets/img/project1.png)">
+						</div>
+						<div class="project-tile" style="background-image: url(./assets/img/project2.png)">
+						</div>
+						<div class="project-tile" style="background-image: url(./assets/img/project3.png)">
+						</div>
 						<br>
-						<a href="https://github.com/EpohSiEreht/bordio" class="project-tile" style="background-image: url(./assets/img/project4.png)">
-						</a>
-						<a href="https://github.com/EpohSiEreht/Poke-Map" class="project-tile" style="background-image: url(./assets/img/project5.png)">
-						</a>
-						<a href="https://github.com/sfrieson/NewNeighborhoods" class="project-tile" style="background-image: url(./assets/img/project6.png)">
-						</a>
+						<div class="project-tile" style="background-image: url(./assets/img/project4.png)">
+						</div>
+						<div class="project-tile" style="background-image: url(./assets/img/project5.png)">
+						</div>
+						<div class="project-tile" style="background-image: url(./assets/img/project6.png)">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -81,10 +202,8 @@
 		
 	</div>
 
-</div>
+</div> -->
 
 
-
-<script type="text/javascript" src="./assets/js/scripts.js"></script>
 </body>
 </html>
