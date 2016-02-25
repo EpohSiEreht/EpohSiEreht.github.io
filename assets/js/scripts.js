@@ -27,7 +27,11 @@ function contentTransition() {
 function rightProjects(){
 	$('#first-content').velocity({
 		right: '100vw'
-	}, 500);
+	}, 500, function(){
+		setTimeout(function(){
+			$('#first-content').hide();
+		})
+	});
 	$('#second-content').css('right', '-100vw').show().velocity({
 		right: '0'
 	}, 500);
@@ -36,7 +40,11 @@ function rightProjects(){
 function rightContact(){
 	$('#second-content').velocity({
 		right: '100vw'
-	}, 500);
+	}, 500, function(){
+		setTimeout(function(){
+			$('#second-content').hide();
+		}, 500);
+	});
 	$('#third-content').css('right', '-100vw').show().velocity({
 		right: '0'
 	}, 500);
@@ -45,19 +53,27 @@ function rightContact(){
 function leftAbout(){
 	$('#second-content').velocity({
 		right: '-100vw'
-	}, 500);
+	}, 500, function(){
+		setTimeout(function(){
+			$('#second-content').hide();
+		}, 500);
+	});
 	$('#first-content').show().velocity({
 		right: '0'
 	}, 500);
 }
 
 function leftProjects(){
-	$('#second-content').velocity({
+	$('#second-content').show().velocity({
 		right: '0vw'
 	}, 500);
 	$('#third-content').velocity({
 		right: '-100vw'
-	}, 500);
+	}, 500, function(){
+		setTimeout(function(){
+			$('#third-content').hide();
+		}, 500);
+	});
 }
 
 function navLinkTransition() {
