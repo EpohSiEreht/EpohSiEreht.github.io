@@ -72,7 +72,7 @@ function leftProjects(){
 	}, 500, function(){
 		setTimeout(function(){
 			$('#third-content').hide();
-		}, 500);
+		}, 200);
 	});
 }
 
