@@ -7,7 +7,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="./assets/velocity/velocity.js"></script>
+	<script src="./vendor/jquery.scrollTo/jquery.scrollTo.js"></script>
+	<script src="./vendor/jquery.localScroll/jquery.localScroll.js"></script>
 	<script type="text/javascript" src="./assets/js/scripts.js"></script>
 </head>
 <body>
@@ -23,9 +24,9 @@
 		</div>
 		<div id="menu-drop">
 			<ul>
-				<li><p class="nav-a" id="nav-about" href="">About</p></li>
-				<li><p class="nav-a" id="nav-projects" href="">Projects</p></li>
-				<li><p class="nav-a" id="nav-contact" href="">Contact</p></li>
+				<li><a class="nav-a" id="nav-about" href="#first-content">About</a></li>
+				<li><a class="nav-a" id="nav-projects" href="#second-content">Projects</a></li>
+				<li><a class="nav-a" id="nav-contact" href="#third-content">Contact</a></li>
 				<li><a class="nav-a" href="https://twitter.com/Life0fDavid">Twitter</a></li>
 				<li><a class="nav-a" href="https://github.com/EpohSiEreht">Github</a></li>
 				<li><a class="nav-a" href="https://www.linkedin.com/in/epohsiereht">LinkedIn</a></li>
@@ -35,9 +36,9 @@
 	<nav class="navbar">
 		<ul>
 			<li><img class="logo" src="./assets/img/logo.png"></li>
-			<li>About</li>
-			<li>Projects</li>
-			<li>Contact</li>
+			<li id="about"><a href="#first-content">About</a></li>
+			<li id="projects"><a href="#second-content">Projects</a></li>
+			<li id="contact"><a href="#third-content">Contact</a></li>
 			<li><a href="https://twitter.com/Life0fDavid"><img class="nav-icon" src="./assets/img/twitter.png"></a></li>
 			<li><a href="https://github.com/EpohSiEreht"><img class="nav-icon" src="./assets/img/github.png"></a></li>
 			<li><a href="https://www.linkedin.com/in/epohsiereht
@@ -57,8 +58,6 @@
 			<h1>Skills</h1>
 			<img id="skill-icon" src="./assets/img/Icons.png">
 		</section>
-
-		<img class="right-arrow" id="to-projects" src="./assets/img/arrow.png">
 
 	</div>
 
@@ -124,9 +123,6 @@
 				</div>
 		</section>
 
-		<img class="left-arrow" id="to-about" src="./assets/img/arrow.png">
-		<img class="right-arrow" id="to-contact" src="./assets/img/arrow.png">
-
 	</div>
 
 	<div class="content-area" id="third-content">
@@ -139,71 +135,7 @@
 			</div>
 		</section>
 
-		<img class="left-arrow" id="back-projects" src="./assets/img/arrow.png">
-
 	</div>
-
-
-	<!-- <div class="mobile-nav">
-		<ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</div> -->
-
-
-
-<!-- 	<div class="main-sections">
-		<section id="about">
-			<div class="flex flex-center">
-				<div class="col-1 push-right">
-					<img id="my-pic" src="./assets/img/profile.png">
-					<h2>David Lee</h2>
-					<p>• Web Developer • Thinker<br>   • Problem Solver</p>
-				</div>
-			</div>
-		</section>
-		<section id="skills">
-			<div class="flex flex-space-around">
-				
-				<div class="skill-tree">
-					<h2>Skills</h2>
-					<img src="./assets/img/Icons.png" id="icons">
-				</div>
-				
-			</div>
-		</section>
-		<section id="projects">
-			<div class="flex flex-center">
-				<div class="col-60">
-					<h2>Projects</h2>
-					<div class="project-wrap">
-						<div class="project-tile" style="background-image: url(./assets/img/project1.png)">
-						</div>
-						<div class="project-tile" style="background-image: url(./assets/img/project2.png)">
-						</div>
-						<div class="project-tile" style="background-image: url(./assets/img/project3.png)">
-						</div>
-						<br>
-						<div class="project-tile" style="background-image: url(./assets/img/project4.png)">
-						</div>
-						<div class="project-tile" style="background-image: url(./assets/img/project5.png)">
-						</div>
-						<div class="project-tile" style="background-image: url(./assets/img/project6.png)">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer id="contact" class="page-footer">
-			<a href="mailto:iamdaviddlee@gmail.com">iamdaviddlee@gmail.com</a>
-		</footer>
-		
-	</div>
-
-</div> -->
 
 
 </body>
