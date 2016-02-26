@@ -136,11 +136,11 @@ function toggleHamburger() {
         $(this).toggleClass('open');
         var dropHeight = $('#menu-drop').get(0).scrollHeight + "px";
         if($('#menu-drop').css('height') === "0px"){
-        	$('#menu-drop').show().velocity({
+        	$('#menu-drop').show().animate({
         		height: $('#menu-drop').get(0).scrollHeight
         	}, 500);
         } else if($('#menu-drop').css('height') === dropHeight){
-        	$('#menu-drop').velocity({
+        	$('#menu-drop').animate({
         		height: '0px'
         	}, 500);
     		setTimeout(function(){
