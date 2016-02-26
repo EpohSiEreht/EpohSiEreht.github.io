@@ -70,9 +70,7 @@ function leftProjects(){
 	$('#third-content').velocity({
 		right: '-100vw'
 	}, 500, function(){
-		setTimeout(function(){
-			$('#third-content').hide();
-		}, 200);
+		$('#third-content').hide();;
 	});
 }
 
