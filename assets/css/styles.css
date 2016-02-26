@@ -342,15 +342,18 @@ h1 {
 		padding-top: 30px;
 		font-size: 5vw;
 	}
+}
+
+@media only screen and  (max-width: 430px ){
 
 	div.project-tile {
 		width: 70vw;
 	}
-}
 
-@media only screen and  (max-width: 430px ){
-	
-	div.project-tile {
-		width: 70vw;
+	.back-tile {
+		width: 51.8vw;
+		height: 50%;
+		margin-left: 13.2%;
+		margin-top: 20%;
 	}
 }
