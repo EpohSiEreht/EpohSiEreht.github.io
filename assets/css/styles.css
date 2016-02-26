@@ -286,8 +286,9 @@ h1 {
 }
 
 .hover-tile h3{
-	padding-top: 36px;
+	opacity: 0;
 	font-size: 30px;
+	padding-top: 26px;
 }
 
 #profile {

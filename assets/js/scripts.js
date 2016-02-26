@@ -3,7 +3,7 @@ $(function() {
 	toggleHamburger();
 	navLinkTransition();
 	// contentTransition();
-	// projectHover();
+	projectHover();
 });
 
 // var firstContentRight = $('#first-content').css('right');
@@ -128,13 +128,20 @@ function projectHover() {
 		$(thisHover).show();
 		$(thisHover).velocity({
 			height: '100%'
-		}, 700)},
+		}, 700);
+		$(thisH).velocity({
+			opacity: "1"
+		}, 1000);
+		},
 		function(){
 			var thisHover = $(this).find('.hover-tile');
 			var thisH = $(this).find('h3');
 			$(thisHover).velocity({
 				height: '0'
 			}, 700);
+			$(thisH).velocity({
+				opacity: "0"
+			}, 500);
 			setTimeout(function(){
 				$(thisHover).hide();
 			},700);
