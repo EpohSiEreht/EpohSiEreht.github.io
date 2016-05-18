@@ -16,6 +16,7 @@ nav.navbar {
 	width: 70vw;
 	left: 15%;
 	border-bottom: 1px solid #c5c5c5;
+	text-align: right;
 }
 
 #menu-drop {
@@ -70,9 +71,7 @@ a:active, a:hover {
   width: 60px;
   height: 45px;
   position: relative;
-  margin: 0;
   top: -33px;
-  left: 85%;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -278,7 +277,7 @@ h1 {
 	top: 270px;
 	left: 0;
 	right: 0;
-	margin: 50px auto;
+	margin: 50px auto 150px auto;
 	background-color: #2F6BF9;
 	border-radius: 12px;
 	text-align: center;
@@ -337,7 +336,7 @@ h1 {
 	.back-tile {
 		width: 74.5%;
 		height: 49.9%;
-		margin-left: 13.15%;
+		margin-left: 13%;
 		margin-top: 20.8%;
 	}
 }
