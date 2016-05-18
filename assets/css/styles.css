@@ -270,6 +270,10 @@ h1 {
 	height: 300px;
 }
 
+#contact-me {
+	margin-bottom: 400px;
+}
+
 #email-area {
 	position: relative;
 	max-width: 400px;
@@ -277,7 +281,7 @@ h1 {
 	top: 270px;
 	left: 0;
 	right: 0;
-	margin: 50px auto 150px auto;
+	margin: 50px auto;
 	background-color: #2F6BF9;
 	border-radius: 12px;
 	text-align: center;
