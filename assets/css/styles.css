@@ -113,6 +113,7 @@ header.intro {
 	background: #ff9933;
 	border: 1px solid #ff9933;
 	animation: fadeIn 0.5s linear 1;
+	cursor: pointer;
 }
 .head-button a:link {
 	color: white;
@@ -128,7 +129,6 @@ header.intro {
 	border-radius: 0.2em;
 	text-align: center;
 	margin-top: 2em;
-	cursor: pointer;
 }
 #download-resume {
 	left: 3em;
