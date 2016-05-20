@@ -1,6 +1,6 @@
 $(function() {
 	projectHover();
-	$(document).on('click','#learn-more', function(event) {
+	$(document).on('click','#view-portfolio', function(event) {
 	    event.preventDefault();
 	    console.log('hi');
 	    $('html, body').animate({
