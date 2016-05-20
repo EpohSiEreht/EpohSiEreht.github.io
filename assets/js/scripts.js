@@ -1,10 +1,12 @@
 $(function() {
-	$('.navbar, #menu-drop').localScroll({duration:800});
-	toggleHamburger();
 	projectHover();
-	$(document).on('click','#view-portfolio', function(event) {
+	$(document).on('click','#learn-more', function(event) {
 	    event.preventDefault();
-	    $.scrollTo('#main', 1200);
+	    console.log('hi');
+	    $('html, body').animate({
+	        scrollTop: $('#main').offset().top
+	    }, 1200);
+	    console.log('bye');
 	});
 });
 
@@ -34,24 +36,4 @@ function projectHover() {
 			},700);
 		}
 	);
-}
-
-function toggleHamburger() {
-    $('#nav-icon').click(function(){
-        $(this).toggleClass('open');
-        var dropHeight = $('#menu-drop').get(0).scrollHeight + "px";
-        if($('#menu-drop').css('height') === "0px"){
-        	$('#menu-drop').show().animate({
-        		height: $('#menu-drop').get(0).scrollHeight
-        	}, 500);
-        } else if($('#menu-drop').css('height') === dropHeight){
-        	$('#menu-drop').animate({
-        		height: '0px'
-        	}, 500);
-    		setTimeout(function(){
-    			$('#menu-drop').hide();
-    		}, 500);
-        }
-    });
-
 }
