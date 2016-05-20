@@ -364,7 +364,6 @@ footer {
 	#download-resume {
 		left: 7.9em;
 	}
-
 	#view-portfolio {
 		left: 7.9em;
 	}
@@ -378,5 +377,8 @@ footer {
 	.skill img {
 		width: 7em;
 		height: 7em;
+	}
+	.project-tile {
+		margin-left: -10px;
 	}
 }
