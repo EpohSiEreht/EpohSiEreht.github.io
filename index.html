@@ -5,6 +5,7 @@
 	<title>David Lee | Web Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="./vendor/jquery.scrollTo/jquery.scrollTo.js"></script>
@@ -14,59 +15,67 @@
 </head>
 <body>
 
-<div class="page-wrap">
-	<div class="mobile-nav">
-		<img class="logo" src="./assets/img/logo.png">
-		<div id="menu-drop">
-			<ul>
-				<li><a class="nav-a" id="nav-about" href="#about">About</a></li>
-				<li><a class="nav-a" id="nav-projects" href="#projects">Projects</a></li>
-				<li><a class="nav-a" id="nav-contact" href="#contact-me">Contact</a></li>
-				<li><a class="nav-a" href="https://twitter.com/Life0fDavid">Twitter</a></li>
-				<li><a class="nav-a" href="https://github.com/EpohSiEreht">Github</a></li>
-				<li><a class="nav-a" href="https://www.linkedin.com/in/epohsiereht">LinkedIn</a></li>
-			</ul>
+  	<header class="intro">
+  		<div class="tint"></div>
+  		<div class="main-circle">
+  			<h1 class="my-name">David Lee</h1>
+			<p class="my-title">Front-End Web Developer</p>
+			<div class="main-buttons">
+				<div class="head-button" id="download-resume"><a href="./assets/img/davidlee-resume.pdf" download>Download Resume</a></div>
+				<div class="head-button" id="view-portfolio"><a href="#" data-target="main">Learn More</a></div>
+			</div>
+  		</div>
+	</header>
+	<section class="main" id="main">
+		<h3>About Me</h3>
+		<p>I am an ambitious web developer, passionate about new technology and its capability.</p>
+		<p>I hope to inspire others and aim to create beautiful products for people to use.</p><br><br><br>
+		<div class="skills">
+			<div class="skill" id="front-end">
+				<img src="./assets/img/tag.png">
+				<h2>Front-End</h2>
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>JavaScript/jQuery</li>
+					<li>AngularJS</li>
+					<li>Bootstrap</li>
+					<li>FreeMarker Template</li>
+				</ul>
+			</div>
+			<div class="skill" id="back-end">
+				<img src="./assets/img/server.png">
+				<h2>Back-End</h2>
+				<ul>
+					<li>Ruby</li>
+					<li>Ruby on Rails</li>
+					<li>PostgreSQL</li>
+					<li>Node.js</li>
+					<li>MongoDB</li>
+				</ul>
+			</div>
+			<div class="skill" id="tools">
+				<img src="./assets/img/tools.png">
+				<h2>Tools</h2>
+				<ul>
+					<li>Git</li>
+					<li>Heroku</li>
+					<li>Pixelmator</li>
+					<li>Sketch</li>
+					<li>Adobe Photoshop</li>
+					<li>Adobe Premiere</li>
+				</ul>
+			</div>
 		</div>
-		<div id="nav-icon">
-		  <span></span>
-		  <span></span>
-		  <span></span>
-		  <span></span>
-		</div>
-	</div>
-	<nav class="navbar">
-		<ul>
-			<li><img class="logo" src="./assets/img/logo.png"></li>
-			<li id="about"><a href="#about">About</a></li>
-			<li id="project"><a href="#projects">Projects</a></li>
-			<li id="contact"><a href="#contact-me">Contact</a></li>
-			<li><a href="https://twitter.com/Life0fDavid"><img class="nav-icon" src="./assets/img/twitter.png"></a></li>
-			<li><a href="https://github.com/EpohSiEreht"><img class="nav-icon" src="./assets/img/github.png"></a></li>
-			<li><a href="https://www.linkedin.com/in/epohsiereht
-"><img class="nav-icon" src="./assets/img/linkedin.png"></a></li>
-		</ul>
-	</nav>
-
-	<div class="content-area" id="first-content">
-
-		<section class="sections" id="about">
-			<h1>About Me</h1>
-			<p>I am an ambitious web developer, passionate about new technology and its capability. I hope to inspire others and aim to create beautiful products for people to use.</p>
-		</section>
-
-		<section class="sections" id="skills">
-			<h1>Skills</h1>
-			<img id="skill-icon" src="./assets/img/Icons.png">
-		</section>
-
-		<section class="sections" id="projects">
+		<h3>Portfolio</h3>
+		<div class="sections" id="projects">
 			<div class="title"><h1>Projects</h1></div>
 			<div class="project-tile" style="background-image: url(./assets/img/mac.png)">
 				<div class="back-tile" style="background-image: url(./assets/img/project1.png)">
 				</div>
 				<a href="https://github.com/EpohSiEreht/FirstGame">
 				<div class="hover-tile">
-					<h3>Water, Grass, Fire</h3>
+					<h4>Water, Grass, Fire</h4>
 				</div>
 				</a>
 			</div>
@@ -75,7 +84,7 @@
 				</div>
 				<a href="https://github.com/EpohSiEreht/RestaurantApp">
 				<div class="hover-tile">
-					<h3>Shaky Shack</h3>
+					<h4>Shaky Shack</h4>
 				</div>
 				</a>
 			</div>
@@ -84,7 +93,7 @@
 				</div>
 				<a href="https://github.com/EpohSiEreht/Project3">
 				<div class="hover-tile">
-					<h3>Project Hearsay</h3>
+					<h4>Project Hearsay</h4>
 				</div>
 				</a>
 			</div>
@@ -93,7 +102,7 @@
 				</div>
 				<a href="https://github.com/EpohSiEreht/bordio">
 				<div class="hover-tile">
-					<h3>Bordio</h3>
+					<h4>Bordio</h4>
 				</div>
 				</a>
 			</div>
@@ -102,7 +111,7 @@
 				</div>
 				<a href="https://github.com/EpohSiEreht/Battle-Maps">
 				<div class="hover-tile">
-					<h3>Battle Maps</h3>
+					<h4>Battle Maps</h4>
 				</div>
 				</a>
 			</div>
@@ -111,22 +120,33 @@
 				</div>
 				<a href="https://github.com/sfrieson/NewNeighborhoods">
 				<div class="hover-tile">
-					<h3>Art District</h3>
+					<h4>Art District</h4>
 				</div>
 				</a>
 			</div>
-		</section>
-
-		<section class="sections" id="contact-me">
-			<h1>Contact Me</h1>
-			<div id="profile-pic"></div>
-			<br>
-			<div id="email-area">
-				<a href="mailto:iamdaviddlee@gmail.com">iAmDavidDLee@gmail.com</a>
+		</div>
+		<h3>Contact</h3>
+		<div class="contacts">
+			<a href="https://www.linkedin.com/in/epohsiereht" target="_blank"><div class="links"><img class="contact-icon" src="./assets/img/linkedin.png">LinkedIn</div></a>
+			<a href="https://github.com/EpohSiEreht" target="_blank"><div class="links"><img class="contact-icon" src="./assets/img/github.png">GitHub</div></a>
+			<a href="https://twitter.com/Life0fDavid" target="_blank"><div class="links"><img class="contact-icon" src="./assets/img/twitter.png">Twitter</div></a>
+			<a href="https://codepen.io/epohsiereht/" target="_blank"><div class="links"><img class="contact-icon" src="./assets/img/codepen.svg">CodePen</div></a>
+		</div>
+		<div class="me">
+			<div class="me-pic"></div>
+			<div class="contact-me">
+				<p>If you're an interested in hiring me or would like to learn more about me, you can contact me by clicking the button below.</p>
 			</div>
-		</section>
-
-	</div>
+			<div class="email-button">
+				<a href="mailto:iamdaviddlee@gmail.com" class="action-button shadow animate blue">Contact Me</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<img class="logo" src="./assets/img/logo.png">
+		<p>David Lee © 2016</p>
+	</footer>
+	
 
 </body>
 </html>

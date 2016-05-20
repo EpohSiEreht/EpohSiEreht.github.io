@@ -1,26 +1,17 @@
 $(function() {
 	$('.navbar, #menu-drop').localScroll({duration:800});
 	toggleHamburger();
-	navLinkTransition();
 	projectHover();
+	$(document).on('click','#view-portfolio', function(event) {
+	    event.preventDefault();
+	    $.scrollTo('#main', 1200);
+	});
 });
 
-function navLinkTransition() {
-	$('#nav-about').on('click', function(){
-		$('#nav-icon').trigger('click');
-	});
-	$('#nav-projects').on('click', function(){
-		$('#nav-icon').trigger('click');
-	});
-	$('#nav-contact').on('click', function(){
-		$('#nav-icon').trigger('click');
-	});
-}
-
 function projectHover() {
-	$('.project-tile').hover(function(){
+	$('.project-tile, h4').hover(function(){
 		var thisHover = $(this).find('.hover-tile');
-		var thisH = $(this).find('h3');
+		var thisH = $(this).find('h4');
 		$(thisHover).show();
 		$(thisHover).velocity({
 			height: '100%'
@@ -31,7 +22,7 @@ function projectHover() {
 		},
 		function(){
 			var thisHover = $(this).find('.hover-tile');
-			var thisH = $(this).find('h3');
+			var thisH = $(this).find('h4');
 			$(thisHover).velocity({
 				height: '0'
 			}, 700);
