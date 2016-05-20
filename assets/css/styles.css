@@ -338,6 +338,17 @@ footer {
 	}
 }
 @media only screen and  (max-width: 500px) {
+	header.intro {
+		background-image: url(../img/nyc.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	p {
 		padding: 0 1em;
 	}
