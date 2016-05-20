@@ -43,7 +43,7 @@ p {
 header.intro {
 	position: relative;
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	background-color: #000; 
     background-image: url(../img/nyc.jpg); 
     background-repeat: no-repeat; 
@@ -336,10 +336,10 @@ footer {
 }
 @media (max-width: 600px) {
 	.my-name {
-		font-size: 4em;
+		font-size: 3.5em;
 	}
 	.my-title {
-		font-size: 2em;
+		font-size: 1.7em;
 	}
 }
 @media only screen and  (max-width: 500px) {
@@ -356,6 +356,17 @@ footer {
 	.main-buttons {
 		display: inline-flex;
 		flex-direction: column;
+	}
+	.head-button {
+		position: relative;
+		width: 40%;
+	}
+	#download-resume {
+		left: 7.9em;
+	}
+
+	#view-portfolio {
+		left: 7.9em;
 	}
 	.skills {
 		display: flex;
