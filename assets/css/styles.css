@@ -2,13 +2,58 @@ html {
 	overflow-x: hidden;
 }
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    font-size: 16px;
-	font-family: 'Roboto Slab', serif;
+	width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.arrow-wrap {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: hover 1s linear infinite;
+}
+
+.arrow {
+  float:left;
+  position: relative;
+	margin-top: 30px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 2em 2em 0 2em;
+  border-color: #000 transparent transparent transparent;
+  -webkit-transform:rotate(360deg);
+	z-index: 20;
+}
+
+.arrow:after {
+  content:'';
+  position: absolute;
+  top:-3em;
+  left:-2em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 2em 2em 0 2em;
+  border-color: #fff transparent transparent transparent;
+  -webkit-transform:rotate(360deg);
+}
+
+.arrow:hover {
+	cursor: pointer;
+}
+
+@keyframes hover {
+	0% {margin-top: 0px;}
+	50% {margin-top: 10px;}
+	100% {margin-top: 0px;}
 }
 
 a:link {
@@ -51,15 +96,15 @@ header.intro {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-color: #000; 
-    background-image: url(../img/nyc.png); 
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-attachment: fixed;       
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	background-color: #000;
+  background-image: url(../img/nyc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -315,7 +360,7 @@ header.intro {
     float: left;
 	border-radius: 10px;
 	font-size: 25px;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .blue {
