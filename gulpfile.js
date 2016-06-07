@@ -57,14 +57,13 @@ gulp.task('images', function () {
              .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('fonts', function () {
-  return gulp.src('vendor/**/*')
-             .pipe(gulp.dest('dist/fonts'));
-});
-
 gulp.task('clean:dist', function () {
   return del.sync('dist');
 });
+
+// -----------------
+//    Build Tasks
+// -----------------
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts'], callback);

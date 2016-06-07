@@ -1,0 +1,467 @@
+@mixin animation($animate) {
+  -webkit-animation: $animate;
+     -moz-animation: $animate;
+      -ms-animation: $animate;
+          animation: $animate;
+}
+
+@keyframes hover {
+	0% {margin-top: 0px;}
+	50% {margin-top: 10px;}
+	100% {margin-top: 0px;}
+}
+
+@keyframes fadeIn {
+	0% {background-color:rgba(255, 153, 51, 0); border: 1px solid rgba(255,153,51,0);}
+	100% {background-color:rgba(255, 153, 51, 1); border: 1px solid rgba(255,153,51,1);}
+}
+
+html {
+	overflow-x: hidden;
+}
+body {
+	width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+}
+
+a:link {
+	text-decoration: none;
+	outline: 0;
+	cursor: auto;
+	color: #000D1D;
+}
+
+a:visited {
+	color: #000D1D;
+}
+
+a:hover {
+	color: #48B7D7;
+}
+
+a:active, a:hover {
+	outline: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	font-size: 5em;
+	margin: 0.7em 0 0 0;
+}
+h4 {
+	font-size: 2em;
+	margin-top: 2.3em;
+}
+p {
+	font-size: 1.4em;
+	margin: 0;
+}
+
+header.intro {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-color: #000;
+  background-image: url(../img/nyc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	color: white;
+}
+
+.tint {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 15;
+}
+
+.main-circle {
+	position: relative;
+	height: 30em;
+	width: 30em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+}
+
+.my-name {
+	font-size: 6em;
+	margin: 0;
+    margin-top: -1em;
+}
+
+.my-title {
+	font-size: 3em;
+	margin: 0;
+	text-align: center;
+	width: 140%;
+}
+
+.main-buttons {
+	position: relative;
+	display: inline-flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.head-button:hover {
+	background: #ff9933;
+	border: 1px solid #ff9933;
+	animation: fadeIn 0.5s linear 1;
+	cursor: pointer;
+}
+
+.head-button a:link {
+	color: white;
+}
+
+.head-button a:visited {
+	color: white;
+}
+
+.head-button {
+	position: absolute;
+	border: 1px solid white;
+	padding: 1em;
+	width: 9em;
+	border-radius: 0.2em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+#download-resume {
+	left: 3em;
+}
+
+#view-portfolio {
+	right: 3em;
+}
+
+.arrow-wrap {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include animation: hover 1s linear infinite;
+}
+
+.arrow-wrap {
+  .arrow {
+    float:left;
+    position: relative;
+  	margin-top: 30px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 2em 2em 0 2em;
+    border-color: #000 transparent transparent transparent;
+    -webkit-transform:rotate(360deg);
+  	z-index: 20;
+  }
+
+  .arrow:after {
+    content:'';
+    position: absolute;
+    top:-3em;
+    left:-2em;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 2em 2em 0 2em;
+    border-color: #fff transparent transparent transparent;
+    -webkit-transform:rotate(360deg);
+  }
+
+  .arrow:hover {
+  	cursor: pointer;
+  }
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(../img/white-grain.png);
+}
+
+.skills {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: flex-start;
+	width: 85%;
+}
+
+.skill {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+}
+
+.skill img {
+	width: 5em;
+	height: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#projects {
+	width: 70%;
+	text-align: center;
+}
+
+.project-tile {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	margin: 20px 10px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.project-tile a {
+	margin: 0;
+	padding: 0;
+}
+
+.back-tile {
+	position: absolute;
+	width: 226px;
+	height: 135px;
+	margin-left: 37px;
+	margin-top: 26px;
+	text-align: center;
+	color: white;
+	background-size: cover;
+	background-position: center;
+}
+
+.hover-tile {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	cursor: pointer;
+	text-align: center;
+	color: white;
+	background-color: #49D0D7;
+	background-size: cover;
+	background-position: center;
+}
+
+.hover-tile h3{
+	opacity: 0;
+	font-size: 30px;
+	padding-top: 45px;
+}
+
+.contacts {
+	max-width: 80%;
+	margin: 2em;
+	text-align: center;
+}
+
+.contact-icon {
+	width: 2.5em;
+	height: 2.5em;
+}
+
+.links {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 1em 0.5em;
+	width: 7em;
+	height: 2.5em;
+	font-size: 2em;
+}
+
+.me {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+}
+
+.me-pic {
+	position: relative;
+	width: 15em;
+	height: 15em;
+	border-radius: 50%;
+	background-image: url(../img/me.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contact-me {
+	position: relative;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: 3em auto;
+	padding: 1em;
+	top: 0;
+	width: 70%;
+}
+
+.email-button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin-bottom: 5em;
+}
+
+.email {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2em;
+	width: 15em;
+	height: 6em;
+	border: 1px solid black;
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+.email-button a {
+	color: white;
+}
+
+.animate {
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button {
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+.blue {
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.action-button:active {
+	transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 7em;
+	width: 100%;
+	background: rgba(5,5,5,0.1);
+	color: rgba(5,5,5,0.7);
+}
+
+.logo {
+	width: 3.5em;
+	height: 3.5em;
+}
+
+@media (min-width: 501px) and (max-width: 950px) {
+	p {
+		padding: 0 2em;
+	}
+}
+
+@media (max-width: 600px) {
+	.my-name {
+		font-size: 3.5em;
+	}
+	.my-title {
+		font-size: 1.7em;
+	}
+}
+
+@media only screen and  (max-width: 500px) {
+	p {
+		padding: 0 1em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	h3 {
+		font-size: 3em;
+		margin-bottom: 0.5em;
+	}
+	.main-buttons {
+		display: inline-flex;
+		flex-direction: column;
+	}
+	.head-button {
+		position: relative;
+		width: 40%;
+	}
+	#download-resume {
+		left: 7.9em;
+	}
+	#view-portfolio {
+		left: 7.9em;
+	}
+	.skills {
+		display: flex;
+		flex-direction: column;
+	}
+	.skill {
+		margin-top: 2em;
+	}
+	.skill img {
+		width: 7em;
+		height: 7em;
+	}
+	.project-tile {
+		left: 0;
+		right: 0;
+		margin: 20px auto;
+	}
+}
